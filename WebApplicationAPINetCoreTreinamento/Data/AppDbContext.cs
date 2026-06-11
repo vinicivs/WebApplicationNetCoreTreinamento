@@ -9,9 +9,10 @@ namespace WebApplicationAPINetCoreTreinamento.Data
         {
         }
 
-        public DbSet<Ceps> Ceps
+        public DbSet<Cep> Cep
         {
             get; set;
         }
+
     }
 }
