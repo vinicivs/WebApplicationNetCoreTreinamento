@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="WebApplicationAPINetCoreTreinamento/WebApplicationAPINetCoreTreinamento.csproj" />
+  <Project Path="WebApplicationMVCNetCoreTreinamento/WebApplicationMVCNetCoreTreinamento.csproj" Id="033c6de8-c321-46a4-8776-4653e1fb578f" />
   <Project Path="WebApplicationRazorNetCoreTreinamento/WebApplicationRazorNetCoreTreinamento.csproj" Id="84c60842-c412-47c4-b6dd-fe0541ab9fec" />
 </Solution>
