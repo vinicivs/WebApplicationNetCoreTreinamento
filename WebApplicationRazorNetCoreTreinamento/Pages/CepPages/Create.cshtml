@@ -1,0 +1,64 @@
+@page
+@model WebApplicationRazorNetCoreTreinamento.Pages.CepPages.CreateModel
+
+@{
+    ViewData["Title"] = "Criar";
+}
+
+<h1>Criar</h1>
+
+<h4>Cep</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cep.Codigo" class="control-label"></label>
+                <input asp-for="Cep.Codigo" class="form-control" />
+                <span asp-validation-for="Cep.Codigo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Logradouro" class="control-label"></label>
+                <input asp-for="Cep.Logradouro" class="form-control" />
+                <span asp-validation-for="Cep.Logradouro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Numero" class="control-label"></label>
+                <input asp-for="Cep.Numero" class="form-control" />
+                <span asp-validation-for="Cep.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Complemento" class="control-label"></label>
+                <input asp-for="Cep.Complemento" class="form-control" />
+                <span asp-validation-for="Cep.Complemento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Bairro" class="control-label"></label>
+                <input asp-for="Cep.Bairro" class="form-control" />
+                <span asp-validation-for="Cep.Bairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Cidade" class="control-label"></label>
+                <input asp-for="Cep.Cidade" class="form-control" />
+                <span asp-validation-for="Cep.Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep.Uf" class="control-label"></label>
+                <input asp-for="Cep.Uf" class="form-control" />
+                <span asp-validation-for="Cep.Uf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
