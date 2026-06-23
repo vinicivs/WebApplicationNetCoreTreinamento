@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="ConsoleAppNetCoreTreinamento/ConsoleAppNetCoreTreinamento.csproj" Id="ced785a2-aeea-4573-9620-ef885bd72720" />
   <Project Path="WebApplicationAPINetCoreTreinamento/WebApplicationAPINetCoreTreinamento.csproj" />
   <Project Path="WebApplicationMVCNetCoreTreinamento/WebApplicationMVCNetCoreTreinamento.csproj" Id="033c6de8-c321-46a4-8776-4653e1fb578f" />
   <Project Path="WebApplicationRazorNetCoreTreinamento/WebApplicationRazorNetCoreTreinamento.csproj" Id="84c60842-c412-47c4-b6dd-fe0541ab9fec" />
+  <Project Path="WinFormsAppNetCoreTreinamento/WinFormsAppNetCoreTreinamento.csproj" Id="2a2b4aae-d9b5-4b53-9ccb-c115afd49f69" />
 </Solution>
