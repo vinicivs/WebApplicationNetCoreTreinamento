@@ -1,0 +1,33 @@
+﻿@page "/ceps/delete/{id:int}"
+@using BlazorAppServerNetCoreTreinamento.Data
+@inject AppDbContext _context
+@inject NavigationManager nav
+
+<h3>Excluir CEP</h3>
+
+<p>Tem certeza que deseja excluir o CEP @(cep?.Codigo)?</p>
+
+<button @onclick="Excluir">Confirmar</button>
+<button @onclick="Cancelar">Cancelar</button>
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Data.Cep cep;
+
+    protected override void OnInitialized()
+    {
+        cep = _context.Cep.FirstOrDefault(c => c.Id == id);
+    }
+
+    private void Excluir()
+    {
+        _context.Cep.Remove(cep);
+        _context.SaveChanges();
+        nav.NavigateTo("/ceps");
+    }
+
+    private void Cancelar()
+    {
+        nav.NavigateTo("/ceps");
+    }
+}

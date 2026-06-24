@@ -1,0 +1,63 @@
+﻿@page "/ceps/create"
+@using BlazorAppServerNetCoreTreinamento.Data
+@inject AppDbContext _context
+@inject NavigationManager nav
+
+<h3>Novo CEP</h3>
+
+<EditForm Model="cep" OnValidSubmit="Salvar">
+    <DataAnnotationsValidator />
+    @* <ValidationSummary /> *@
+
+    <div>
+        <label>CEP:</label>
+        <InputText @bind-Value="cep.Codigo" />
+        <ValidationMessage For="@(() => cep.Codigo)" />
+    </div>
+
+    <div>
+        <label>Logradouro:</label>
+        <InputText @bind-Value="cep.Logradouro" />
+        <ValidationMessage For="@(() => cep.Logradouro)" />
+    </div>
+
+    <div>
+        <label>Número:</label>
+        <InputText @bind-Value="cep.Numero" />
+    </div>
+
+    <div>
+        <label>Complemento:</label>
+        <InputText @bind-Value="cep.Complemento" />
+    </div>
+
+    <div>
+        <label>Bairro:</label>
+        <InputText @bind-Value="cep.Bairro" />
+        <ValidationMessage For="@(() => cep.Bairro)" />
+    </div>
+
+    <div>
+        <label>Cidade:</label>
+        <InputText @bind-Value="cep.Cidade" />
+        <ValidationMessage For="@(() => cep.Cidade)" />
+    </div>
+
+    <div>
+        <label>Estado:</label>
+        <InputText @bind-Value="cep.Uf" />
+        <ValidationMessage For="@(() => cep.Uf)" />
+    </div>
+    <button type="submit">Salvar</button>
+</EditForm>
+
+@code {
+    private Data.Cep cep = new Data.Cep();
+
+    private void Salvar()
+    {
+        _context.Cep.Add(cep);
+        _context.SaveChanges();
+        nav.NavigateTo("/ceps");
+    }
+}

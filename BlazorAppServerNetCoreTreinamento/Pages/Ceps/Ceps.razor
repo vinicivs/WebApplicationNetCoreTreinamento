@@ -1,0 +1,49 @@
+﻿@page "/ceps"
+@using BlazorAppServerNetCoreTreinamento.Data
+@inject AppDbContext _context
+
+<h3>Lista de CEPs</h3>
+
+<a href="/ceps/create">Novo CEP</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>CEP</th>
+            <th>Logradouro</th>
+            <th>Numero</th>
+            <th>Complemento</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Uf</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cep in ceps)
+        {
+            <tr>
+                <td>@cep.Codigo</td>
+                <td>@cep.Logradouro</td>
+                <td>@cep.Numero</td>
+                <td>@cep.Complemento</td>
+                <td>@cep.Bairro</td>
+                <td>@cep.Cidade</td>
+                <td>@cep.Uf</td>
+                <td>
+                    <a href="/ceps/edit/@cep.Id">Editar</a> |
+                    <a href="/ceps/delete/@cep.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Data.Cep> ceps;
+
+    protected override void OnInitialized()
+    {
+        ceps = _context.Cep.ToList();
+    }
+}
