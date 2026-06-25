@@ -7,6 +7,18 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar CORS **necessário para acesso do blazor web assembly**
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 // Add services to the container.
 
 // Versionamento de API
@@ -65,6 +77,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// aplica a política de CORS **necessário para acesso do blazor web assembly**
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
