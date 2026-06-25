@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="BlazorAppServerNetCoreTreinamento/BlazorAppServerNetCoreTreinamento.csproj" />
   <Project Path="ConsoleAppNetCoreTreinamento/ConsoleAppNetCoreTreinamento.csproj" />
+  <Project Path="WebApplicationAPIDapperNetCoreTreinamento/WebApplicationAPIDapperNetCoreTreinamento.csproj" Id="c5de0873-8a2f-4192-87bc-89825f26ce8f" />
   <Project Path="WebApplicationAPIGraphQLNetCoreTreinamento/WebApplicationAPIGraphQLNetCoreTreinamento.csproj" Id="3adeb78f-9118-4a8e-85e2-acf5e7062356" />
   <Project Path="WebApplicationAPINetCoreTreinamento/WebApplicationAPINetCoreTreinamento.csproj" />
   <Project Path="WebApplicationMVCNetCoreTreinamento/WebApplicationMVCNetCoreTreinamento.csproj" />
