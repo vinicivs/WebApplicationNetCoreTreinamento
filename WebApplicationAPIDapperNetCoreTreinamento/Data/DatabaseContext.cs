@@ -10,10 +10,12 @@ namespace WebApplicationAPIDapperNetCoreTreinamento.Data
         public DatabaseContext(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection")
-                ?? throw new ArgumentNullException("Connection string not found");
+                ?? throw new ArgumentNullException("Connection string não encontrada"); //("Connection string not found");
         }
 
-        public IDbConnection CreateConnection()
+        public virtual IDbConnection CreateConnection()
             => new SqlConnection(_connectionString);
+
+        // Para criar uma conexão com o banco de dados, você pode usar o método CreateConnection. Este método retorna uma nova instância de SqlConnection usando a string de conexão fornecida no construtor da classe DatabaseContext.
     }
 }
