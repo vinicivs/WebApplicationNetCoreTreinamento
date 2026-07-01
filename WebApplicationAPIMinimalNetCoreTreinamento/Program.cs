@@ -238,4 +238,5 @@ using (var scope = app.Services.CreateScope())
 
 app.Run();
 
-
+// Esta linha é necessária para os testes
+public partial class Program { }
