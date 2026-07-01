@@ -36,12 +36,13 @@
             arquivoXmlToolStripMenuItem = new ToolStripMenuItem();
             emailToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
+            arquivoPdfToolStripMenuItem = new ToolStripMenuItem();
             MspMenu.SuspendLayout();
             SuspendLayout();
             // 
             // MspMenu
             // 
-            MspMenu.Items.AddRange(new ToolStripItem[] { arquivoTxtToolStripMenuItem, arquivoJsonToolStripMenuItem, arquivoXlsToolStripMenuItem, arquivoXlsxToolStripMenuItem, arquivoXmlToolStripMenuItem, emailToolStripMenuItem, sairToolStripMenuItem });
+            MspMenu.Items.AddRange(new ToolStripItem[] { arquivoTxtToolStripMenuItem, arquivoJsonToolStripMenuItem, arquivoXlsToolStripMenuItem, arquivoXlsxToolStripMenuItem, arquivoXmlToolStripMenuItem, emailToolStripMenuItem, arquivoPdfToolStripMenuItem, sairToolStripMenuItem });
             MspMenu.Location = new Point(0, 0);
             MspMenu.Name = "MspMenu";
             MspMenu.Size = new Size(800, 24);
@@ -97,6 +98,13 @@
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
+            // arquivoPdfToolStripMenuItem
+            // 
+            arquivoPdfToolStripMenuItem.Name = "arquivoPdfToolStripMenuItem";
+            arquivoPdfToolStripMenuItem.Size = new Size(85, 20);
+            arquivoPdfToolStripMenuItem.Text = "Arquivo .Pdf";
+            arquivoPdfToolStripMenuItem.Click += arquivoPdfToolStripMenuItem_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -122,5 +130,6 @@
         private ToolStripMenuItem arquivoXmlToolStripMenuItem;
         private ToolStripMenuItem emailToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem arquivoPdfToolStripMenuItem;
     }
 }

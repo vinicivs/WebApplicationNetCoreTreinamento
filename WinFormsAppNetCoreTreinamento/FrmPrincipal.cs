@@ -63,5 +63,12 @@ namespace WinFormsAppNetCoreTreinamento
             FrmEmail frmEmail = new FrmEmail();
             frmEmail.ShowDialog();
         }
+
+        private void arquivoPdfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abre o formulário FrmPdf
+            FrmPdf frmPdf = new FrmPdf();
+            frmPdf.ShowDialog();
+        }
     }
 }
