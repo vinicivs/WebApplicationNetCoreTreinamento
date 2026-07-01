@@ -5,7 +5,9 @@
   <Project Path="WebApplicationAPIDapperNetCoreTreinamento/WebApplicationAPIDapperNetCoreTreinamento.csproj" Id="c5de0873-8a2f-4192-87bc-89825f26ce8f" />
   <Project Path="WebApplicationAPIGraphQLNetCoreTreinamento/WebApplicationAPIGraphQLNetCoreTreinamento.csproj" Id="3adeb78f-9118-4a8e-85e2-acf5e7062356" />
   <Project Path="WebApplicationAPIMinimalNetCoreTreinamento/WebApplicationAPIMinimalNetCoreTreinamento.csproj" Id="5f33c1e2-c9a8-4281-82cd-b5c825b4890f" />
+  <Project Path="WebApplicationAPIMySqlNetCoreTreinamento/WebApplicationAPIMySqlNetCoreTreinamento.csproj" Id="2333ced7-cbe7-41b5-89a7-24dcd42401ba" />
   <Project Path="WebApplicationAPINetCoreTreinamento/WebApplicationAPINetCoreTreinamento.csproj" />
+  <Project Path="WebApplicationAPIPostgreNetCoreTreinamento/WebApplicationAPIPostgreNetCoreTreinamento.csproj" Id="03474601-5d89-412f-b96f-54be1f7ca711" />
   <Project Path="WebApplicationMVCNetCoreTreinamento/WebApplicationMVCNetCoreTreinamento.csproj" />
   <Project Path="WebApplicationRazorNetCoreTreinamento/WebApplicationRazorNetCoreTreinamento.csproj" />
   <Project Path="WinFormsAppNetCoreTreinamento/WinFormsAppNetCoreTreinamento.csproj" />
